@@ -41,15 +41,15 @@ def base_model():
 
 st.markdown(heading_style, unsafe_allow_html=True)
 gender=st.selectbox('Select your gender',['Male','Female'])
-age=st.number_input('age',min_value=0)
-hypertension=st.slider('hypertension',0,1,0)
-heart_disease=st.slider('heart_disease',0,1,0)
-ever_married=st.selectbox('marrid!',['Yes','No'])
-work_type=st.selectbox('work',['Private','Self-employed','Govt_job'])
-Residence_type=st.selectbox('property',['Urban','Rural'])
-avg_glucose_level=st.number_input('glucose-level',min_value=0)
-bmi=st.number_input('bmi',min_value=0)
-smoking_status=st.selectbox('smoke',['formerly smoked','smokes','never smoked'])
+age=st.number_input('Enter your Age:',min_value=0)
+hypertension=st.slider('Select Hypetension level:',0,1,0)
+heart_disease=st.slider('Select Heart-Disases level:',0,1,0)
+ever_married=st.selectbox('Marital Status:',['Yes','No'])
+work_type=st.selectbox('Selec your work-type:',['Private','Self-employed','Govt_job'])
+Residence_type=st.selectbox('Select your residence type:',['Urban','Rural'])
+avg_glucose_level=st.number_input('Enter your glucose-level',min_value=0)
+bmi=st.number_input('Enter your bmi',min_value=0)
+smoking_status=st.selectbox('Select your smoking status:',['formerly smoked','smokes','never smoked'])
 df=return_df(gender,
     age,
     hypertension,
